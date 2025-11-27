@@ -1,0 +1,47 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2025 Koki Tsutaya
+# SPDX-License-Identifier: GPL-3.0-only
+
+import sys
+
+ELEMENTS = [
+    "",  "H",  "He", "Li", "Be", "B",  "C",  "N",  "O",  "F",  "Ne",
+    "Na", "Mg", "Al", "Si", "P",  "S",  "Cl", "Ar", "K",  "Ca",
+    "Sc", "Ti", "V",  "Cr", "Mn", "Fe", "Co", "Ni", "Cu", "Zn",
+    "Ga", "Ge", "As", "Se", "Br", "Kr", "Rb", "Sr", "Y",  "Zr",
+    "Nb", "Mo", "Tc", "Ru", "Rh", "Pd", "Ag", "Cd", "In", "Sn",
+    "Sb", "Te", "I",  "Xe", "Cs", "Ba", "La", "Ce", "Pr", "Nd",
+    "Pm", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb",
+    "Lu", "Hf", "Ta", "W",  "Re", "Os", "Ir", "Pt", "Au", "Hg",
+    "Tl", "Pb", "Bi", "Po", "At", "Rn", "Fr", "Ra", "Ac", "Th",
+    "Pa", "U",  "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", "Fm",
+    "Md", "No", "Lr", "Rf", "Db", "Sg", "Bh", "Hs", "Mt", "Ds",
+    "Rg", "Cn", "Nh", "Fl", "Mc", "Lv", "Ts", "Og"
+]
+
+nums = []
+
+# 標準入力からまとめて読み込む
+for line in sys.stdin:
+    line = line.strip()
+    if line:
+        nums.append(line)
+
+if not nums:
+    print("Usage: 標準入力から原子番号を1行に1件ずつ入力してください（1〜118）")
+    print("例:")
+    print("1")
+    print("26")
+    sys.exit(0)
+
+# 入力順に出力
+for line in nums:
+    try:
+        num = int(line)
+        if 1 <= num <= 118:
+            print(ELEMENTS[num])
+        else:
+            print("invalid number")
+    except ValueError:
+        print("invalid input")
+
