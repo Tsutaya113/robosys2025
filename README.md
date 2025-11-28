@@ -3,16 +3,16 @@
 
 # element lookup
 ## 概要
-標準的な周期表を用いて、入力された元素番号の元素記号を検索するコマンドです。  
+標準的な周期表を用いて、入力された元素番号の元素記号を検索するコマンドです。
 ![CI](https://github.com/Tsutaya113/robosys2025/actions/workflows/test.yml/badge.svg)
 
 ## テスト環境
-OS            : Ubuntu 24.04.5 LTS / Windows 11  
-python-version: 3.7 ~ 3.12  
+OS            : Ubuntu 24.04.5 LTS / Windows 11
+python-version: 3.7 ~ 3.12
 確認環境      : Ubuntu 24.04.5 LTS + GitHub Actions (CI)
 
 ## インストール方法
-下記のコマンドを使用し、クローンを行ってください。  
+下記のコマンドを使用し、クローンを行ってください。
 
 ```shell
 $ git clone https://github.com/Tsutaya113/robosys2025.git
@@ -43,12 +43,12 @@ $ printf "4\n26\n" | ./element_lookup.py
 ```
 
 ## 入力仕様
-- 元素番号:1~118の整数    
+- 元素番号:1~118の整数
 
-不正な数字は以下のように出力されます。    
+不正な数字は以下のように出力されます。
 
-- 範囲外の元素番号: `invalid number`  
-- フォーマット不正:`invalid input`  
+- 範囲外の元素番号: `invalid number`
+- フォーマット不正:`invalid input`
 - 入力なし        : Usage表示
 
 ## 著作権・ライセンス
