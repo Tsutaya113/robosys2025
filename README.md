@@ -47,7 +47,7 @@ $ printf "4\n26\n" | ./element_lookup.py
 
 不正な数字は以下のように出力されます。    
 
-- 範囲外の日付    : `invalid number`  
+- 範囲外の元素番号: `invalid number`  
 - フォーマット不正:`invalid input`  
 - 入力なし        : Usage表示
 
