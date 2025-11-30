@@ -39,7 +39,6 @@ ret=$?
 [ "$ret" = 0 ] || ng "$LINENO"
 [[ "$out" == *Usage* ]] || ng "$LINENO"
 
-
 [ "$res" = 0 ] && echo "OK"
 exit $res
 
