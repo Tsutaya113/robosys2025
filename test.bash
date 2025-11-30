@@ -24,8 +24,6 @@ expected=$'H\nHe\nFe'
 [ "$out" = "$expected" ] || ng "$LINENO"
 
 ### INVALID INPUT (非数字) ###
-# stderr のみを err に取りたい -> stderr を stdout に写してから stdout を捨てる
-# つまり: 2>&1 で stderr -> stdout にし、その後 1>/dev/null で stdout を捨てる
 err=$(echo "abc" | ./element_lookup.py 2>&1 1>/dev/null)
 expected="invalid input"
 [ "$err" = "$expected" ] || ng "$LINENO"
