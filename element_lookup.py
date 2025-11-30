@@ -21,7 +21,6 @@ ELEMENTS = [
 
 nums = []
 
-# 標準入力からまとめて読み込む
 for line in sys.stdin:
     line = line.strip()
     if line:
@@ -34,7 +33,6 @@ if not nums:
     print("26")
     sys.exit(0)
 
-# 入力順に出力
 for line in nums:
     try:
         num = int(line)
