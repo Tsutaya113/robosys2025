@@ -26,12 +26,14 @@ for line in sys.stdin:
     if line:
         nums.append(line)
 
+error = False
+
 if not nums:
     print("Usage: 標準入力から原子番号を1行に1件ずつ入力してください（1〜118）", file=sys.stderr)
     print("例:", file=sys.stderr)
     print("1", file=sys.stderr)
     print("26", file=sys.stderr)
-    sys.exit(0)
+    sys.exit(1)
 
 for line in nums:
     try:
@@ -40,6 +42,13 @@ for line in nums:
             print(ELEMENTS[num])
         else:
             print("invalid number", file=sys.stderr)
+            error = True
     except ValueError:
         print("invalid input", file=sys.stderr)
+        error = True
+
+if error:
+    sys.exit(1)
+else:
+    sys.exit(0)
 
