@@ -19,11 +19,8 @@ $ git clone https://github.com/Tsutaya113/robosys2025.git
 $ cd robosys2025
 ```
 
-標準入力から以下の形式で元素番号を与えます。
+標準入力から元素番号を与えます。
 
-```
-MMM
-```
 
 実行例
 
