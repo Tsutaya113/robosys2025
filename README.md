@@ -3,6 +3,7 @@
 
 # element_lookup
 ![CI](https://github.com/Tsutaya113/robosys2025/actions/workflows/test.yml/badge.svg)
+
 ## 概要
 標準的な周期表を用いて、入力された元素番号の元素記号を検索するコマンドです。
 
