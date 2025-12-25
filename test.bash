@@ -23,20 +23,23 @@ out=$(printf "1\n2\n26\n" | ./element_lookup 2>/dev/null)
 expected=$'H\nHe\nFe'
 [ "$out" = "$expected" ] || ng "$LINENO"
 
-### INVALID INPUT (非数字) ###
 err=$(echo "abc" | ./element_lookup 2>&1 1>/dev/null)
+ret=$?
 expected="invalid input"
 [ "$err" = "$expected" ] || ng "$LINENO"
+[ "$ret" = 1 ] || ng "$LINENO"
 
 ### INVALID NUMBER (範囲外) ###
 err=$(echo "119" | ./element_lookup 2>&1 1>/dev/null)
+ret=$?
 expected="invalid number"
 [ "$err" = "$expected" ] || ng "$LINENO"
+[ "$ret" = 1 ] || ng "$LINENO"
 
 ### EMPTY INPUT ###
 out=$(cat /dev/null | ./element_lookup 2>&1)
 ret=$?
-[ "$ret" = 0 ] || ng "$LINENO"
+[ "$ret" = 1 ] || ng "$LINENO"
 [[ "$out" == *Usage* ]] || ng "$LINENO"
 
 [ "$res" = 0 ] && echo "OK"
