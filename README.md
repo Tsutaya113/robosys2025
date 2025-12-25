@@ -11,7 +11,7 @@ OS            : Ubuntu 22.04.5 LTS / Windows 11
 python-version: 3.7 ~ 3.12  
 確認環境      : Ubuntu 22.04.5 LTS + GitHub Actions (CI)
 
-## インストール方法
+## 使い方
 下記のコマンドを使用し、クローンを行ってください。
 
 ```shell
@@ -19,7 +19,6 @@ $ git clone https://github.com/Tsutaya113/robosys2025.git
 $ cd robosys2025
 ```
 
-## 使い方
 標準入力から以下の形式で元素番号を与えます。
 
 ```
@@ -31,14 +30,6 @@ MMM
 ```shell
 $ echo "2" | ./element_lookup
  He
-```
-
-複数行にも対応しています。
-
-```shell
-$ printf "4\n26\n" | ./element_lookup
- Be
- Fe
 ```
 
 ## 入力仕様
