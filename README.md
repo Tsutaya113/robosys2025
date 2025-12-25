@@ -34,9 +34,25 @@ $ echo "2" | ./element_lookup
 
 不正な入力は以下のように出力されます。
 
-- 範囲外の元素番号: `invalid number`
-- フォーマット不正:`invalid input`
-- 入力なし        : Usage表示
+- 範囲外の元素番号
+```shell
+$ echo "119" | ./element_lookup
+ invalid number
+```
+
+- フォーマット不正
+```shell
+$ echo "abc" | ./element_lookup
+ invalid input
+```
+
+- 入力なし
+```shell
+$ cat /dev/null | ./element_lookup
+Usage: 標準入力から原子番号を1つ入力してください（1〜118）
+例:
+26
+```
 
 ## 著作権・ライセンス
 - このソフトウェアパッケージは、GNU General Public License v3.0（GPL-3.0-only）の下、再頒布および使用が許可されています。
