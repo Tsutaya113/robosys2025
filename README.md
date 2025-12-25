@@ -2,7 +2,7 @@
 本リポジトリは千葉工業大学 未来ロボティクス学科 2025年度 ロボットシステム学内で行った内容に基づいて作成された練習用リポジトリです。
 
 # element_lookup
-![CI](https://github.com/Tsutaya113/robosys2025/actions/workflows/test.yml/badge.sv)
+![CI](https://github.com/Tsutaya113/robosys2025/actions/workflows/test.yml/badge.svg)
 ## 概要
 標準的な周期表を用いて、入力された元素番号の元素記号を検索するコマンドです。
 
