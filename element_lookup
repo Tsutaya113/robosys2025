@@ -29,7 +29,7 @@ for line in sys.stdin:
 error = False
 
 if not nums:
-    print("Usage: 標準入力から原子番号を1つ入力してください（1〜118）", file=sys.stderr)
+    print("Usage: 標準入力から原子番号を1つ入力してください(1〜118)", file=sys.stderr)
     print("例:", file=sys.stderr)
     print("26", file=sys.stderr)
     sys.exit(1)

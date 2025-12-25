@@ -2,7 +2,7 @@
 本リポジトリは千葉工業大学 未来ロボティクス学科 2025年度 ロボットシステム学内で行った内容に基づいて作成された練習用リポジトリです。
 
 # element_lookup
-![CI](https://github.com/Tsutaya113/robosys2025/actions/workflows/test.yml/badge.svg)
+![CI](https://github.com/Tsutaya113/robosys2025/actions/workflows/test.yml/badge.sv)
 ## 概要
 標準的な周期表を用いて、入力された元素番号の元素記号を検索するコマンドです。
 
@@ -49,12 +49,12 @@ $ echo "abc" | ./element_lookup
 - 入力なし
 ```shell
 $ cat /dev/null | ./element_lookup
-Usage: 標準入力から原子番号を1つ入力してください（1〜118）
+Usage: 標準入力から原子番号を1つ入力してください(1〜118)
 例:
 26
 ```
 
 ## 著作権・ライセンス
-- このソフトウェアパッケージは、GNU General Public License v3.0（GPL-3.0-only）の下、再頒布および使用が許可されています。
+- このソフトウェアパッケージは、GNU General Public License v3.0(GPL-3.0-only)の下、再頒布および使用が許可されています。
 - 本[README](https://github.com/Tsutaya113/robosys2025/blob/main/README.md)は、[asnm1208](https://github.com/asnm1208)の[robosys2025](https://github.com/asnm1208/robosys2025/blob/main/README.md)(© 2025 asnm1208)を参考に作られています。
 - © 2025 Tsutaya Koki
