@@ -7,9 +7,9 @@
 標準的な周期表を用いて、入力された元素番号の元素記号を検索するコマンドです。
 
 ## テスト環境
-OS            : Ubuntu 22.04.5 LTS / Windows 11  
+OS: Ubuntu 22.04.5 LTS / Windows 11  
 python-version: 3.7 ~ 3.12  
-確認環境      : Ubuntu 22.04.5 LTS + GitHub Actions (CI)
+確認環境: Ubuntu 22.04.5 LTS + GitHub Actions (CI)
 
 ## 使い方
 下記のコマンドを使用し、クローンを行ってください。
