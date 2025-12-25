@@ -29,14 +29,14 @@ MMM
 実行例
 
 ```shell
-$ echo "2" | ./element_lookup.py
+$ echo "2" | ./element_lookup
  He
 ```
 
 複数行にも対応しています。
 
 ```shell
-$ printf "4\n26\n" | ./element_lookup.py
+$ printf "4\n26\n" | ./element_lookup
  Be
  Fe
 ```
