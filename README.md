@@ -9,8 +9,8 @@
 
 ## テスト環境
 OS: Ubuntu 22.04.5 LTS / Windows 11  
-python-version: 3.7 ~ 3.12  
-確認環境: Ubuntu 22.04.5 LTS + GitHub Actions (CI)
+python-version: 3.7 ~ 3.12
+確認環境: Ubuntu 22.04.5 LTS + GitHub Actions （22.04）
 
 ## 使い方
 下記のコマンドを使用し、クローンを行ってください。
@@ -50,12 +50,12 @@ $ echo "abc" | ./element_lookup
 - 入力なし
 ```shell
 $ cat /dev/null | ./element_lookup
-Usage: 標準入力から原子番号を1つ入力してください(1〜118)
+Usage: 標準入力から原子番号を1つ入力してください（1〜118）
 例:
 26
 ```
 
 ## 著作権・ライセンス
-- このソフトウェアパッケージは、GNU General Public License v3.0(GPL-3.0-only)の下、再頒布および使用が許可されています。
-- 本[README](https://github.com/Tsutaya113/robosys2025/blob/main/README.md)は、[asnm1208](https://github.com/asnm1208)の[robosys2025](https://github.com/asnm1208/robosys2025/blob/main/README.md)(© 2025 asnm1208)を参考に作られています。
+- このソフトウェアパッケージは、GNU General Public License v3.0（GPL-3.0-only）の下、再頒布および使用が許可されています。
+- 本[README](https://github.com/Tsutaya113/robosys2025/blob/main/README.md)は、[asnm1208](https://github.com/asnm1208)の[robosys2025](https://github.com/asnm1208/robosys2025/blob/main/README.md)（© 2025 asnm1208）を参考に作られています。
 - © 2025 Tsutaya Koki

@@ -29,7 +29,7 @@ expected="invalid input"
 [ "$err" = "$expected" ] || ng "$LINENO"
 [ "$ret" = 1 ] || ng "$LINENO"
 
-### INVALID NUMBER (範囲外) ###
+### INVALID NUMBER （範囲外）###
 err=$(echo "119" | ./element_lookup 2>&1 1>/dev/null)
 ret=$?
 expected="invalid number"
