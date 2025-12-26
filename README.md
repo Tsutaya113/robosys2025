@@ -9,8 +9,8 @@
 
 ## テスト環境
 OS: Ubuntu 22.04.5 LTS / Windows 11  
-python-version: 3.7 ~ 3.12 
-確認環境: Ubuntu 22.04.5 LTS + GitHub Actions （22.04）
+python-version: 3.7 ~ 3.12
+確認環境 : Ubuntu 22.04.5 LTS + GitHub Actions（22.04）
 
 ## 使い方
 下記のコマンドを使用し、クローンを行ってください。
