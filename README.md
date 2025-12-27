@@ -5,20 +5,18 @@
 
 # element_lookup
 ## 概要
-標準的な周期表を用いて、入力された元素番号の元素記号を検索するコマンドです。
-
-## テスト環境
-OS : Ubuntu 22.04.5 LTS / Windows 11  
-python-version: 3.7 ~ 3.12  
-確認環境 : Ubuntu 22.04.5 LTS + GitHub Actions （22.04）
+本リポジトリは、千葉工業大学 未来ロボティクス学科における2025年度「ロボットシステム学」の授業内容をもとに作成した、学習用の練習リポジトリです。
 
 ## 使い方
+###準備
 下記のコマンドを使用し、クローンを行ってください。
 
 ```shell
 $ git clone https://github.com/Tsutaya113/robosys2025.git
 $ cd robosys2025
 ```
+
+###実行方法
 
 標準入力から元素番号を与えます。
 
@@ -30,7 +28,7 @@ $ echo "2" | ./element_lookup
  He
 ```
 
-## 入力仕様
+## 入力についての説明
 - 元素番号:1~118の整数
 
 不正な入力は以下のように出力されます。
@@ -54,6 +52,11 @@ Usage: 標準入力から原子番号を1つ入力してください（1〜118�
 例:
 26
 ```
+
+## テスト環境
+OS : Ubuntu 22.04.5 LTS / Windows 11  
+python-version: 3.7 ~ 3.12  
+確認環境 : Ubuntu 22.04.5 LTS + GitHub Actions （22.04）
 
 ## 著作権・ライセンス
 - このソフトウェアパッケージは、GNU General Public License v3.0（GPL-3.0-only）の下、再頒布および使用が許可されています。
