@@ -15,7 +15,7 @@ $ git clone https://github.com/Tsutaya113/robosys2025.git
 $ cd robosys2025
 ```
 
-こうすることで、クローンしたリポジトリ内にelement_lookupがあり、実行できるようになります。
+これにより、クローンしたリポジトリ内に element_lookup が含まれ、以降の例のように実行できます。  
 
 標準入力から元素番号を与え、実行することで元素記号を検索できます。
 
@@ -54,10 +54,11 @@ Usage: 標準入力から原子番号を1つ入力してください（1〜118�
 
 ## テスト環境
 - Ubuntu 22.04.5 LTS
+- Python 3.7 〜 3.12
 
-## 必要なソフトウェア
-- Github Actions
-  - テスト済みのpythonバージョン: 3.7 ~ 3.12  
+## CI（継続的インテグレーション）
+- GitHub Actions を用いて自動テストを実行
+
 
 ## 著作権・ライセンス・利用しているソフトウェア
 - Ubuntu 22.04.5 LTS / Python3 .13 .5
